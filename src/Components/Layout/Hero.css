@@ -1,0 +1,74 @@
+.heroBG {
+  background: url(../../Assets/coffee2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: brightness(0.4);
+  clip-path: polygon(50% 0%, 100% 0%, 100% 75.8%, 0% 100%, 0% 0%);
+  height: 45rem;
+  position: relative;
+}
+
+.container-hero {
+  height: 300px;
+  position: relative;
+  top: -150px;
+  display: flex;
+  justify-content: center;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 100%, 0% 100%, 0% 25%);
+  background: #46258578;
+}
+
+.hero {
+  color: var(--main-text-color);
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainText {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  text-align: -webkit-center;
+}
+
+.subText {
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: 200;
+  text-align: center;
+  text-align: -webkit-center;
+}
+
+.underline {
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .mainText {
+    font-size: 2.4rem;
+  }
+
+  .subText {
+    font-size: 1.25rem;
+  }
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .mainText {
+    font-size: 3.2rem;
+  }  
+
+  .subText {
+    font-size: 1.6rem;
+  }
+
+}

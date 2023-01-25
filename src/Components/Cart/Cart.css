@@ -1,0 +1,9 @@
+.totalPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5rem;
+  font-size: 3rem;
+  font-weight: 600;
+  width: 100%;
+}

@@ -1,0 +1,10 @@
+.Card {
+  display: flex;
+  position: relative;
+  top: -100px;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}

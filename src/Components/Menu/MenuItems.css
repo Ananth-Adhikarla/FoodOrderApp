@@ -1,0 +1,106 @@
+.MenuItems {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.MenuItems:not(:last-child) {
+  border-bottom: 1px solid rgb(180, 178, 178);
+}
+
+.Left, .Right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.Right {
+  align-items: flex-end;
+  border-left: 1px solid black;
+  padding: 0 20px;
+}
+
+.textTitle {
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.textSmall {
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.textPrice {
+  color: #1c2346;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.itemAdd {
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  color: black;
+  background: #E65F5C;
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  width: 10rem;
+}
+
+.itemAdd:hover {
+  background: #d83d3b;
+  cursor: pointer;
+}
+
+input[type="number"] {
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  width: 12rem;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  button {
+    padding: 1.5rem 3rem;
+  }
+
+  .text {
+    font-size: 1.6rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  .MenuItems {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  button {
+    padding: 1.5rem 5rem;
+  }
+
+  .text {
+    font-size: 1.6rem;
+  }
+}

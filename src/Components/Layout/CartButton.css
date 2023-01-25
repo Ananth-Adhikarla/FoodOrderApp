@@ -1,0 +1,65 @@
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  color: white;
+  background: #E65F5C;
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+}
+
+button:hover {
+  background: #d83d3b;
+  cursor: pointer;
+}
+
+.text {
+  font-size: 1.4rem;
+}
+
+.hide-text {
+  display: none;
+}
+
+.qty {
+  background: #a93f3d;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}
+
+.qtyFlashBG {
+  background: #01874c;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  button {
+    padding: 1.5rem 3rem;
+  }
+
+  .text {
+    font-size: 1.6rem;
+  }
+
+  .hide-text {
+    display: block;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  button {
+    padding: 1.5rem 5rem;
+  }
+
+  .text {
+    font-size: 1.6rem;
+  }
+
+  .hide-text {
+    display: block;
+  }
+}
